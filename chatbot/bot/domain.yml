@@ -1,0 +1,30 @@
+version: "3.1"
+entities:
+  - subject
+
+intents:
+  - greet
+  - goodbye
+  - ask_overall_infor
+  - ask_infor
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: "Chào bạn! Tôi có thể giúp gì được cho bạn?"
+
+  utter_overall_infor:
+  - text: "Bạn có thể tìm hiểu thông tin chung về các ngành đào tạo tại đây: http://localhost/NLN_MT/view/ttts/"
+
+  utter_goodbye:
+  - text: "Tạm biệt!"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_get_infor

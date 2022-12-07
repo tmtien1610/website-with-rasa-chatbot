@@ -1,0 +1,16 @@
+.subject-link{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subject-link:hover{
+    background-color: #1c57a5;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.subject-link.active{
+    background-color: #1c57a5;
+    color: #fff;
+}

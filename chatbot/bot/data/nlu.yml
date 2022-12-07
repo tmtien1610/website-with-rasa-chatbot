@@ -1,0 +1,52 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - greeting
+    - chào
+    - xin chào
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - good bye
+    - hện gặp lại
+    - cảm ơn
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ask_overall_infor
+  examples: |
+    - Bạn có thể tư vấn cho mình không
+    - Mình chưa biết nên chọn ngành nào
+    - Cho mình xin thông tin chung của các ngành
+    - Mình nên học ngành nào đây
+    - Thông tin của tất cả các ngành
+
+- intent: ask_infor
+  examples: |
+    - Cho mình hỏi thông tin về ngành [Công nghệ thông tin](subject)
+    - Bạn có thể cung cấp cho mình các thông tin của ngành [Khoa học máy tính](subject) không?
+    - Cho mình xin các thông tin về ngành [An toàn thông tin](subject)
+    - Bạn cho mình xin thông tin của ngành [Kĩ thuật phần mềm](subject)
+    - Thông tin ngành [Truyền thông đa phương tiện](subject)
+    - [Công nghệ thông tin chất lượng cao](subject)
+    - Tư vấn cho mình về ngành [Mạng máy tính và truyền thông dữ liệu](subject)
+    - Một số thông tin về ngành [Hệ thống thông tin](subject)
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

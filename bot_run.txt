@@ -1,0 +1,2 @@
+cd chatbot/bot
+rasa run --cors "*"
